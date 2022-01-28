@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [10.x,12.x,14.x]
+        node-version: [14.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -31,4 +31,4 @@ jobs:
       - uses: microsoft/playwright-github-action@v1
 
       - name: Install dependencies and run tests
-        run: npm install && npm run test:headless
+        run: npm install && npm test

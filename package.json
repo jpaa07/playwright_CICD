@@ -8,7 +8,7 @@
     "e2e:headed": "npx playwright test --headed",
     "allure-results": "npx allure generate ./allure-results --clean",
     "open-report": "npx allure open ./allure-report",
-    "test": "npm run e2e:headed && npm run allure-results && npm run open-report",
+    "test": "npm run e2e:headless && npm run allure-results && npm run open-report",
     "test:headless": "npm run e2e:headless && npm run allure-results && npm run open-report"
   },
   "repository": {
