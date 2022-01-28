@@ -1,0 +1,31 @@
+{
+  "name": "playwright-sample",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "index.js",
+  "scripts": {
+    "e2e:headed": "npx playwright test --headed",
+    "allure-results": "npx allure generate ./allure-results --clean",
+    "open-report": "npx allure open ./allure-report",
+    "test": "npm run e2e:headed && npm run allure-results && npm run open-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://jpaa07@bitbucket.org/jpaa07/playwright-sample.git"
+  },
+  "keywords": [
+    "playwright"
+  ],
+  "author": "Juan Pablo Arango",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/jpaa07/playwright-sample/issues"
+  },
+  "homepage": "https://bitbucket.org/jpaa07/playwright-sample#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.17.2",
+    "allure-commandline": "^2.17.2",
+    "experimental-allure-playwright": "^0.0.3",
+    "typescript": "^4.5.4"
+  }
+}
