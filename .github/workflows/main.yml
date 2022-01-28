@@ -31,4 +31,4 @@ jobs:
       - uses: microsoft/playwright-github-action@v1
 
       - name: Install dependencies and run tests
-        run: npm install && npm test:headless
+        run: npm install && npm run test:headless
