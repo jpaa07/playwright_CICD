@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "e2e:headless": "npx playwright test",
+    "install:chrome": "npx playwright install chromium",
     "e2e:headed": "npx playwright test --headed",
     "allure-results": "npx allure generate ./allure-results --clean",
     "open-report": "npx allure open ./allure-report",
-    "test": "npm run e2e:headless && npm run allure-results",
+    "test": "npm run install:chrome && npm run e2e:headless && npm run allure-results",
     "test:headed": "npm run e2e:headed && npm run allure-results && npm run open-report"
   },
   "repository": {
