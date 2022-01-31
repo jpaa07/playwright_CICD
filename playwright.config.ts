@@ -3,9 +3,12 @@ const config: PlaywrightTestConfig = {
   use: {
     baseURL: 'https://www.executeautomation.com/',
     browserName: 'chromium',
-    headless: false,
+    headless: true,
     screenshot: 'on'
   },
-  reporter: 'experimental-allure-playwright'
+  reporter: [
+    ['line'], 
+    ['experimental-allure-playwright']
+  ]
 };
 export default config;
